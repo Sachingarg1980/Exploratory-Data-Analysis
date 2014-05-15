@@ -5,6 +5,7 @@ NEI$year <- factor(NEI$year, levels=c('1999', '2002', '2005', '2008'))
 SCC <- readRDS("Source_Classification_Code.rds")
 
 # Baltimore City, Maryland == fips
+# Los Angeles, California == fips
 MD.onroad <- subset(NEI, fips == '24510' & type == 'ON-ROAD')
 CA.onroad <- subset(NEI, fips == '06037' & type == 'ON-ROAD')
 
