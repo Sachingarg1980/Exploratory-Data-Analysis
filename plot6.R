@@ -27,5 +27,5 @@ png('plot6.png')
 ggplot(data=DF, aes(x=year, y=Emissions)) + geom_bar(aes(fill=year)) + guides(fill=F) + 
     ggtitle('Total Emissions of Motor Vehicle Sources\nLos Angeles County, California vs. Baltimore City, Maryland') + 
     ylab(expression('PM'[2.5])) + xlab('Year') + theme(legend.position='none') + facet_grid(. ~ City) + 
-    geom_text(aes(label=round(Emissions,2), size=1, hjust=0.5, vjust=-1))
+    geom_text(aes(label=round(Emissions,0), size=1, hjust=0.5, vjust=-1))
 dev.off()
